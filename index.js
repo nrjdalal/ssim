@@ -17,7 +17,7 @@
 
 // gsap.fromTo('.route', { rotation: 20, x: 100 }, { rotation: 0, x: 0, duration: 7 })
 
-gsap.fromTo('.route1', { rotation: 12, x: 1000 }, { rotation: 0, x: 0, duration: 10 })
+gsap.fromTo('.route1', { rotation: 12, x: 100 }, { rotation: 0, x: 0, duration: 5 })
 gsap.fromTo('.route2', { rotation: 14, x: 2000 }, { rotation: 0, x: 0, duration: 20 })
 gsap.fromTo('.route3', { rotation: 16, x: 3000 }, { rotation: 0, x: 0, duration: 30 })
 gsap.fromTo('.route4', { rotation: 18, x: 4000 }, { rotation: 0, x: 0, duration: 40 })
