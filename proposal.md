@@ -2,9 +2,7 @@
 
 The given website is to be made for a Management Institution. Where students can download brochure, send queries and can fill admission forms.
 
-## Preview Site -
-
-https://drive.google.com/file/d/1_wkmu9gfs62pwi0OvGGEqRsnrJAmmcJp/view?usp=sharing
+## Preview Site - ssim.vercel.app
 
 ## Project Scope -
 
@@ -19,13 +17,14 @@ https://drive.google.com/file/d/1_wkmu9gfs62pwi0OvGGEqRsnrJAmmcJp/view?usp=shari
 
 ## Cost Estimate & Time -
 
-1. According to the current requirements the cost can lie around 21k-25k.
+1. According to the current requirements the cost can lie around 16k-18k.
 2. Delivery within a week for current requirements. In case of some changes and additional functionalities the delievery time can increase. The project will be deployed as soon as approved by the project owners.
 
 ## Payment Process -
 
 20% at the start, 30% at the time of half completion and remaining at the time of delivery.
 
-## After Delivery Support -
+## After Delivery Support and Terms -
 
-Client will be provided with site maintenance and minimal upgrades for a month for same.
+1. Client will be provided with site maintenance and minimal upgrades for a month for same.
+2. Designed by VeroXyle shall be included in footed at all times.
