@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "dev": "npm install && npx concurrently \"npx live-server --no-browser\" \"npx tailwindcss -i ./src/css/global.css -o ./src/css/tailwind.css -wm\""
+  },
+  "devDependencies": {
+    "@tailwindcss/aspect-ratio": "^0.2.1",
+    "@tailwindcss/forms": "^0.3.3",
+    "@tailwindcss/line-clamp": "^0.2.1",
+    "@tailwindcss/typography": "^0.4.1",
+    "concurrently": "^6.2.0",
+    "live-server": "^1.2.1"
+  }
+}
