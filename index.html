@@ -8,7 +8,15 @@
     <link rel="stylesheet" href="./src/css/tailwind.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
   </head>
-  <body class="h-screen">
+  <body class=" h-screen">
+    <div onclick="topFunction()" id="myBtn" class="fixed h-12 w-12 bg-blue-500 rounded-xl border-2 border-blue-200 bottom-4 right-6 z-30 cursor-pointer text-center">
+      <div class="h-full w-full flex items-center justify-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 11l7-7 7 7M5 19l7-7 7 7" />
+        </svg>
+      </div>
+    </div>
+
     <!-- Mini Header -->
     <div class="bg-gray-900 text-white">
       <div class="container mx-auto flex justify-between pr-6 py-3">
@@ -46,7 +54,7 @@
       </div>
     </div>
     <!-- Main Header -->
-    <header class="sticky text-gray-600 body-font bg-white border-b-2 border-gray-200">
+    <header class="text-gray-600 body-font bg-white border-b-2 border-gray-200">
       <div class="container mx-auto flex p-5 items-center justify-between">
         <a class="title-font font-medium text-gray-900 md:mb-0">
           <img class="h-10 lg:h-12" src="https://ssimdwarka.org/wp-content/uploads/2019/12/logo-ssim.png" alt="" />
@@ -530,6 +538,23 @@
         .from(slide8, 10, { autoAlpha: 0, ease: Power4.easeIn })
         .from(slide9, 10, { autoAlpha: 0, ease: Power4.easeIn })
       // Hero Slide Animations -End
+
+      mybutton = document.getElementById("myBtn");
+      
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+      } 
     </script>
   </body>
 </html>
