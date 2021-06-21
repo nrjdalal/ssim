@@ -9,11 +9,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
   </head>
   <body class=" h-screen">
-    <div onclick="topFunction()" id="myBtn" class="fixed h-12 w-12 bg-blue-500 rounded-xl border-2 border-blue-200 bottom-4 right-6 z-30 cursor-pointer text-center">
+    <div onclick="topFunction()" id="myBtn" class="hidden fixed h-12 w-12 bg-blue-500 rounded-xl border-2 border-blue-200 bottom-4 right-6 z-30 cursor-pointer text-center">
       <div class="h-full w-full flex items-center justify-center">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 11l7-7 7 7M5 19l7-7 7 7" />
         </svg>
+      </div>
+    </div>
+    <div id="applyBtn" class="hidden fixed h-12 w-[180px] bg-yellow-500 rounded-xl border-2 border-yellow-200 bottom-4 left-6 z-30 cursor-pointer text-center">
+      <div class="h-full w-full flex items-center justify-center">
+        <p class="text-white font-medium">APPLY ONLINE</p>
       </div>
     </div>
 
@@ -507,7 +512,7 @@
       </div>
 
       <div class="bg-gray-900">
-        <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+        <div class="container mx-auto py-4 px-5 pb-[80px] flex flex-wrap flex-col sm:flex-row">
           <p class="text-white text-sm text-center sm:text-left">© 2020 SSIMDWARKA.ORG</p>
           <span class="sm:ml-auto sm:mt-0 mt-2 sm:w-auto w-full sm:text-left text-center text-white text-sm">Designed by VeroXyle</span>
         </div>
@@ -540,14 +545,20 @@
       // Hero Slide Animations -End
 
       mybutton = document.getElementById("myBtn");
+      applyBtn = document.getElementById("applyBtn");
       
       window.onscroll = function() {scrollFunction()};
 
       function scrollFunction() {
-        if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+        if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
           mybutton.style.display = "block";
         } else {
           mybutton.style.display = "none";
+        }
+        if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+          applyBtn.style.display = "block";
+        } else {
+          applyBtn.style.display = "none";
         }
       }
 
