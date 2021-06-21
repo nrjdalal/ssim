@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>tailwind project</title>
     <link rel="stylesheet" href="./src/css/tailwind.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
   </head>
   <body class="h-screen">
     <!-- Mini Header -->
@@ -81,5 +82,45 @@
       </div>
     </header>
     <!-- Hero -->
+    <section class="relative h-[500px]">
+      <img class="absolute h-[500px] object-cover object-center w-screen" src="https://source.unsplash.com/720x600/?students,0" alt="" />
+      <div class="z-10">
+        <img class="absolute route1 h-[500px] object-cover object-center w-screen" alt="hero" src="https://source.unsplash.com/720x600/?students,1" />
+        <img class="absolute route2 h-[500px] object-cover object-center w-screen" alt="hero" src="https://source.unsplash.com/720x600/?students,2" />
+        <img class="absolute route3 h-[500px] object-cover object-center w-screen" alt="hero" src="https://source.unsplash.com/720x600/?students,3" />
+        <img class="absolute route4 h-[500px] object-cover object-center w-screen" alt="hero" src="https://source.unsplash.com/720x600/?students,4" />
+        <img class="absolute route5 h-[500px] object-cover object-center w-screen" alt="hero" src="https://source.unsplash.com/720x600/?students,5" />
+        <img class="absolute route6 h-[500px] object-cover object-center w-screen" alt="hero" src="https://source.unsplash.com/720x600/?students,6" />
+        <img class="absolute route7 h-[500px] object-cover object-center w-screen" alt="hero" src="https://source.unsplash.com/720x600/?students,7" />
+        <img class="absolute route8 h-[500px] object-cover object-center w-screen" alt="hero" src="https://source.unsplash.com/720x600/?students,8" />
+        <img class="absolute route8 h-[500px] object-cover object-center w-screen" alt="hero" src="https://source.unsplash.com/720x600/?students,9" />
+      </div>
+    </section>
+
+    <script defer>
+      // Hero Slide Animations - Start
+      var slide1 = document.getElementsByClassName('route1')
+      var slide2 = document.getElementsByClassName('route2')
+      var slide3 = document.getElementsByClassName('route3')
+      var slide4 = document.getElementsByClassName('route4')
+      var slide5 = document.getElementsByClassName('route5')
+      var slide6 = document.getElementsByClassName('route6')
+      var slide7 = document.getElementsByClassName('route7')
+      var slide8 = document.getElementsByClassName('route8')
+      var slide9 = document.getElementsByClassName('route9')
+
+      var tl = new TimelineLite()
+
+      tl.from(slide1, 5, { x: '+=40', autoAlpha: 0, ease: Power4.easeIn })
+        .from(slide2, 5, { x: '+=40', autoAlpha: 0, ease: Power4.easeIn })
+        .from(slide3, 5, { x: '+=40', autoAlpha: 0, ease: Power4.easeIn })
+        .from(slide4, 5, { x: '+=40', autoAlpha: 0, ease: Power4.easeIn })
+        .from(slide5, 5, { x: '+=40', autoAlpha: 0, ease: Power4.easeIn })
+        .from(slide6, 5, { x: '+=40', autoAlpha: 0, ease: Power4.easeIn })
+        .from(slide7, 5, { x: '+=40', autoAlpha: 0, ease: Power4.easeIn })
+        .from(slide8, 5, { x: '+=40', autoAlpha: 0, ease: Power4.easeIn })
+        .from(slide9, 5, { x: '+=40', autoAlpha: 0, ease: Power4.easeIn })
+      // Hero Slide Animations -End
+    </script>
   </body>
 </html>
