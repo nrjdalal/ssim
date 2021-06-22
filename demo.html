@@ -97,53 +97,53 @@
     <!-- Hero -->
     <section class="relative h-[500px]">
       <img
-        class="absolute route0 h-[500px] object-cover z-10 object-center w-screen opacity-100"
+        class="absolute heroSlides route0 h-[500px] object-cover z-10 object-center w-screen"
         alt="hero"
         src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
         alt=""
       />
       <img
-        class="absolute route1 h-[500px] object-cover z-10 object-center w-screen opacity-100"
+        class="absolute heroSlides route1 h-[500px] object-cover z-10 object-center w-screen"
         alt="hero"
         src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
       />
       <img
-        class="absolute route2 h-[500px] object-cover z-10 object-center w-screen opacity-100"
+        class="absolute heroSlides route2 h-[500px] object-cover z-10 object-center w-screen"
         alt="hero"
         src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
       />
       <img
-        class="absolute route3 h-[500px] object-cover z-10 object-center w-screen opacity-100"
+        class="absolute heroSlides route3 h-[500px] object-cover z-10 object-center w-screen"
         alt="hero"
         src="https://images.unsplash.com/photo-1509062522246-3755977927d7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2604&q=80"
       />
       <img
-        class="absolute route4 h-[500px] object-cover z-10 object-center w-screen opacity-100"
+        class="absolute heroSlides route4 h-[500px] object-cover z-10 object-center w-screen"
         alt="hero"
         src="https://images.unsplash.com/photo-1596496050755-c923e73e42e1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1472&q=80"
       />
       <img
-        class="absolute route5 h-[500px] object-cover z-10 object-center w-screen opacity-100"
+        class="absolute heroSlides route5 h-[500px] object-cover z-10 object-center w-screen"
         alt="hero"
         src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1500&q=80"
       />
       <img
-        class="absolute route6 h-[500px] object-cover z-10 object-center w-screen opacity-100"
+        class="absolute heroSlides route6 h-[500px] object-cover z-10 object-center w-screen"
         alt="hero"
         src="https://images.unsplash.com/photo-1531482615713-2afd69097998?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
       />
       <img
-        class="absolute route7 h-[500px] object-cover z-10 object-center w-screen opacity-100"
+        class="absolute heroSlides route7 h-[500px] object-cover z-10 object-center w-screen"
         alt="hero"
         src="https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1500&q=80"
       />
       <img
-        class="absolute route8 h-[500px] object-cover z-10 object-center w-screen opacity-100"
+        class="absolute heroSlides route8 h-[500px] object-cover z-10 object-center w-screen"
         alt="hero"
         src="https://images.unsplash.com/photo-1610008885395-d4b47c2f5c8c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
       />
       <img
-        class="absolute route9 h-[500px] object-cover z-10 object-center w-screen opacity-100"
+        class="absolute heroSlides route9 h-[500px] object-cover z-10 object-center w-screen"
         alt="hero"
         src="https://images.unsplash.com/photo-1503428593586-e225b39bddfe?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
       />
@@ -565,29 +565,9 @@
       </div>
     </footer>
 
-    <script defer>
+    <script>
       // Hero Slide Animations - Start
-      var slide1 = document.getElementsByClassName('route1')
-      var slide2 = document.getElementsByClassName('route2')
-      var slide3 = document.getElementsByClassName('route3')
-      var slide4 = document.getElementsByClassName('route4')
-      var slide5 = document.getElementsByClassName('route5')
-      var slide6 = document.getElementsByClassName('route6')
-      var slide7 = document.getElementsByClassName('route7')
-      var slide8 = document.getElementsByClassName('route8')
-      var slide9 = document.getElementsByClassName('route9')
-
-      var tl = new TimelineLite()
-
-      tl.from(slide1, 8, { autoAlpha: 0, ease: Power4.easeIn })
-        .from(slide2, 8, { autoAlpha: 0, ease: Power4.easeIn })
-        .from(slide3, 8, { autoAlpha: 0, ease: Power4.easeIn })
-        .from(slide4, 8, { autoAlpha: 0, ease: Power4.easeIn })
-        .from(slide5, 8, { autoAlpha: 0, ease: Power4.easeIn })
-        .from(slide6, 8, { autoAlpha: 0, ease: Power4.easeIn })
-        .from(slide7, 8, { autoAlpha: 0, ease: Power4.easeIn })
-        .from(slide8, 8, { autoAlpha: 0, ease: Power4.easeIn })
-        .from(slide9, 8, { autoAlpha: 0, ease: Power4.easeIn })
+      gsap.from('.heroSlides', { opacity: 0, duration: 5, stagger: 7, ease: Power1.easeInOut, repeat: -1, yoyo: true })
       // Hero Slide Animations -End
 
       mybutton = document.getElementById('myBtn')
