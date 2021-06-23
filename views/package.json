@@ -1,4 +1,5 @@
 {
+  "name": "ssimvx",
   "scripts": {
     "dev": "npm install && npx concurrently \"npx live-server --no-browser\" \"npx tailwindcss -i ./src/css/global.css -o ./src/css/tailwind.css -wm\""
   },
