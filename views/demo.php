@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <?php include "views/components/head.php"; ?>
     <title>ssim project</title>
-    <link rel="stylesheet" href="./src/css/tailwind.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
   </head>
+
   <body class="h-screen w-screen overflow-x-hidden">
     <div onclick="topFunction()" id="myBtn" class="hidden fixed h-12 w-12 bg-blue-500 rounded-xl border-2 border-blue-200 bottom-4 right-6 z-30 cursor-pointer text-center">
       <div class="h-full w-full flex items-center justify-center">
